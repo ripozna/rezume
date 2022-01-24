@@ -1,4 +1,4 @@
-
+{%load static %}
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -10,7 +10,7 @@
 {% csrf_token %}
 {{form.as_p}}
 {% comment %} <input id="your_name" type="text" name="your_name" value="{{ current_name }}"> {% endcomment %}
-  
+
 <button type='submit'>Создать резюме </button>
 </form>
  </body>

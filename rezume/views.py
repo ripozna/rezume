@@ -55,7 +55,6 @@ def write_pdf_view(request):
     p.drawString(10, 750, 'surname:')
     p.drawString(10, 700, 'phone_number:')
     p.drawString(10, 650, 'date_of_birth:')
-    p.drawString(10,600,'marital status:')
     p.drawString(10, 550, 'purpose :')
     p.drawString(10, 500, 'education:')
     p.drawString(10, 450, 'professional_skills:')

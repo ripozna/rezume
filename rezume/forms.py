@@ -9,6 +9,7 @@ from rezume.models import Info
 #         fields = '__all__'
         
 class RegistrationForm(forms.Form):
+    image =forms.ImageField()
     name= forms.CharField(max_length=1000)
     surname= forms.CharField(max_length=1000)
     phone_number = forms.CharField(max_length=1000)
@@ -18,4 +19,14 @@ class RegistrationForm(forms.Form):
     professional_skills= forms.CharField(max_length=1000)
     personal_qualities= forms.CharField(max_length=1000)
     additional_information= forms.CharField(max_length=1000)
-   
+    
+# class RegistrationForm(forms.ModelForm):  
+#     class Meta:
+#         model = Info
+#         fields = ('image',' name','surname','phone_number','date_of_birth','purpose','education','personal_qualities','additional_information')
+
+# class RegistrationForm(forms.ModelForm):
+#     class Meta:
+#         model = Info
+#         fields = '__all__'
+        
